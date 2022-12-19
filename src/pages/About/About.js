@@ -1,11 +1,13 @@
 import Header from "../../components/Header/Header";
+import Banner from "../../components/Banner/Banner";
 
 function About(props) {
   return (
     <>
       <Header />
+      <Banner />
       <div>
-        <p>About</p>
+        <p>à propos</p>
       </div>
     </>
   );
