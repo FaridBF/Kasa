@@ -1,0 +1,28 @@
+.header-container {
+  display: flex;
+  flex-direction: row;
+  width: 1240px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-nav {
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.logo-header {
+  width: 210px;
+}
+
+.link-nav {
+  color: #ff6060;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.link-nav:hover {
+  color: blue;
+}

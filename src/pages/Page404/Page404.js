@@ -1,10 +1,22 @@
-import React from "react";
+import Header from "../../components/Header/Header";
 
-function Page404(props) {
+import "./page404.css";
+
+function Page404() {
   return (
-    <div>
-      <p>Erreur 404</p>
-    </div>
+    <>
+      <Header />
+      <div className="container-error404">
+        <h1 className="title-error404">404</h1>
+        <h2 className="description-error404">
+          Oups! La page que vous demandez n'existe pas.
+        </h2>
+
+        <a className="link-home" href="/">
+          <p>Retourner sur la page d'accueil</p>
+        </a>
+      </div>
+    </>
   );
 }
 
