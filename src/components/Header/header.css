@@ -19,10 +19,12 @@
 
 .link-nav {
   color: #ff6060;
+  border-bottom: #ff6060 solid 3px;
+  text-decoration: none;
   font-weight: 500;
   font-size: 24px;
 }
 
 .link-nav:hover {
-  color: blue;
+  border-bottom: blue solid 3px;
 }
