@@ -7,6 +7,11 @@ import Page404 from "./pages/Page404/Page404";
 
 import "./styles/app.css";
 
+// import { library } from "@fortawesome/fontawesome-svg-core";
+// import { faXmark } from "@fortawesome/free-solid-svg-icons";
+
+// library.add(faXmark);
+
 function App() {
   return (
     <BrowserRouter>
@@ -14,7 +19,7 @@ function App() {
         <Route path="*" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/accommodationSheet" element={<AccommodationSheet />} />
-        <Route path="/page404" element={<Page404 />} />
+        <Route path="/404" element={<Page404 />} />
       </Routes>
     </BrowserRouter>
   );
