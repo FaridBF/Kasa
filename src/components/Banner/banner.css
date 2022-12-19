@@ -1,0 +1,21 @@
+.banner-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-img {
+  mix-blend-mode: darken;
+  border-radius: 25px;
+  background-image: url("../../assets/images/background.png");
+}
+
+.title-banner {
+  position: absolute;
+  font-weight: 500;
+  font-size: 48px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-style: normal;
+}
