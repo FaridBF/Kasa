@@ -7,3 +7,16 @@
   justify-content: center;
   background-color: black;
 }
+
+.description-footer {
+  color: white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+i.fa-regular.fa-copyright {
+  color: white;
+  height: 10px;
+  width: 10px;
+}

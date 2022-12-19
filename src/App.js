@@ -7,10 +7,10 @@ import Page404 from "./pages/Page404/Page404";
 
 import "./styles/app.css";
 
-// import { library } from "@fortawesome/fontawesome-svg-core";
-// import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faCopyright } from "@fortawesome/free-regular-svg-icons";
 
-// library.add(faXmark);
+library.add(faCopyright);
 
 function App() {
   return (
