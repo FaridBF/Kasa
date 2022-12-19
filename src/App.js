@@ -9,8 +9,9 @@ import "./styles/app.css";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faCopyright } from "@fortawesome/free-regular-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faCopyright);
+library.add(faCopyright, faStar);
 
 function App() {
   return (
