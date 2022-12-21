@@ -20,7 +20,10 @@ function App() {
       <Routes>
         <Route path="*" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/accommodationSheet" element={<AccommodationSheet />} />
+        <Route
+          path="/accommodationSheet/:uid"
+          element={<AccommodationSheet />}
+        />
         <Route path="/404" element={<Page404 />} />
       </Routes>
     </BrowserRouter>

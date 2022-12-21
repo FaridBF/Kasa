@@ -1,6 +1,7 @@
 .card {
   width: 340px;
   height: 340px;
+  cursor: pointer;
   display: flex;
   background: linear-gradient(
     180deg,

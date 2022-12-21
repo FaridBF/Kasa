@@ -16,28 +16,27 @@ function ToogleList() {
           <div onClick={() => setReliability(!reliability)}>
             <h1 className="title-section">
               Fiabilité
-              <span>
+              <span className="logo-section">
                 <FontAwesomeIcon icon="fa-solid fa-chevron-down" />
               </span>
             </h1>
           </div>
           {reliability ? (
             <div className="description-section">
-              {" "}
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Distinctio reprehenderit totam voluptate voluptatem nam?
                 Nesciunt, eveniet itaque! Enim voluptatibus quasi necessitatibus
                 nobis ipsa ut aliquam
-              </p>{" "}
+              </p>
             </div>
           ) : null}
         </div>
         <div className="respect-section">
           <div onClick={() => setRespect(!respect)}>
             <h1 className="title-section">
-              Respect{" "}
-              <span>
+              Respect
+              <span className="logo-section">
                 <FontAwesomeIcon icon="fa-solid fa-chevron-down" />
               </span>
             </h1>
@@ -54,8 +53,8 @@ function ToogleList() {
         <div className="service-section">
           <div onClick={() => setService(!service)}>
             <h1 className="title-section">
-              Service{" "}
-              <span>
+              Service
+              <span className="logo-section">
                 <FontAwesomeIcon icon="fa-solid fa-chevron-down" />
               </span>
             </h1>
@@ -72,8 +71,8 @@ function ToogleList() {
         <div className="responsibility-section">
           <div onClick={() => setResponsibility(!responsibility)}>
             <h1 className="title-section">
-              Responsabilité{" "}
-              <span>
+              Responsabilité
+              <span className="logo-section">
                 <FontAwesomeIcon icon="fa-solid fa-chevron-down" />
               </span>
             </h1>

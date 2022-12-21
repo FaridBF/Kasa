@@ -1,14 +1,25 @@
 import "./card.css";
-
 import data from "../../data/kasa.json";
 
+import { useNavigate } from "react-router-dom";
+
 function Card() {
+  let navigate = useNavigate();
+
+  const redirectionViaId = (userId) => {
+    navigate("/accommodationSheet/" + userId, { replace: true });
+  };
+
   return (
     <>
       {data.map((element, id) => {
-        console.log("element", element);
+        // console.log("element", element);
         return (
-          <div key={id} className="card">
+          <div
+            onClick={() => redirectionViaId(element.id)}
+            key={id}
+            className="card"
+          >
             <img
               className="cover-card"
               src={element.cover}
