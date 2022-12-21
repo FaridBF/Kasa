@@ -10,8 +10,9 @@ import "./styles/app.css";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faCopyright } from "@fortawesome/free-regular-svg-icons";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faCopyright, faStar);
+library.add(faCopyright, faStar, faChevronDown);
 
 function App() {
   return (
