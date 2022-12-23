@@ -1,0 +1,36 @@
+.title-equipment-section {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  background: #ff6060;
+  border-radius: 5px;
+  width: 500px;
+  height: 47px;
+  justify-content: space-between;
+  padding: 15px;
+  margin: -5px;
+}
+
+.description-equipment-section {
+  width: 500px;
+  border-radius: 0px 0px 5px 5px;
+  font-weight: 400;
+  font-size: 24px;
+  color: #ff6060;
+  background: #f7f7f7;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0px;
+}
+
+.logo-equipment-section {
+  cursor: pointer;
+}
+
+.position-equipment-section {
+  padding: 15px;
+}
