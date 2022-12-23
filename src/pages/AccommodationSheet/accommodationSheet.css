@@ -1,0 +1,123 @@
+/* Section carrousel*/
+#carrousel {
+  display: flex;
+  width: 1240px;
+  height: 415px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+}
+
+.bouton {
+  position: absolute;
+  width: 70px;
+  cursor: pointer;
+  top: 170px;
+}
+
+svg#d {
+  height: 70px;
+}
+
+svg#g {
+  height: 70px;
+}
+
+#g {
+  opacity: 0.4;
+  transition: all 0, 3 ease;
+  transform: rotate(0deg);
+}
+
+#d {
+  right: 0px;
+  transition: all 0, 3 ease;
+  opacity: 0.4;
+  transform: rotate(0deg);
+}
+
+#g:hover {
+  opacity: 1;
+  transition: all 0, 3 ease;
+
+  transform: rotare(0deg) scale(1.1);
+}
+
+#d:hover {
+  opacity: 1;
+  transition: all 0, 3 ease;
+  transform: rotare(180deg) scale(1.1);
+}
+
+.img-carrousel {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+/* Section description*/
+
+.section-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+img.photo-profil {
+  border-radius: 100%;
+  width: 64px;
+  background: #c4c4c4;
+  height: 60%;
+}
+
+.profil-section {
+  display: flex;
+  font-weight: 500;
+  color: #ff6060;
+  font-size: 18px;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.profil-top-section {
+  display: flex;
+}
+
+.profil-bottom-section {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.title-profil-section {
+  color: #ff6060;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.location-profil-section {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #ff6060;
+}
+
+.tag-profil-section {
+  background: #ff6060;
+  border-radius: 10px;
+  font-weight: 500;
+  color: white;
+  font-size: 14px;
+  padding: 5px 25px 5px 25px;
+}
+
+.descriptionAndEquipement-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
