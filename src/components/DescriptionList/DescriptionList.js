@@ -1,31 +1,47 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './descriptionList.css';
 
-function DescriptionList({ accommodation }) {
-  console.log('des', accommodation);
-  const [description, setDescription] = useState(true);
+function DescriptionList({ data, title }) {
+  console.log('data', data);
+  const [newdata, setnewData] = useState(true);
+  const [isDataList, setIsDataList] = useState(false);
+
+  useEffect(() => {
+    if (Array.isArray(data)) {
+      setIsDataList(true);
+    } else {
+      setIsDataList(false);
+    }
+  }, []);
 
   return (
     <>
       <section className='container-description-sections'>
         <div className='description-description-section'>
-          <div onClick={() => setDescription(!description)}>
+          <div onClick={() => setnewData(!newdata)}>
             <h1 className='title-description-section'>
-              Description
+              {title}
               <span className='logo-description-section'>
                 <FontAwesomeIcon icon='fa-solid fa-chevron-down' />
               </span>
             </h1>
           </div>
-          {description ? (
+          {newdata && isDataList && (
             <div className='container-description-section'>
-              <p className='position-description-section'>
-                {accommodation.description}
-              </p>
+              <div className='position-description-section'>
+                {data.map((equipment, index) => {
+                  return <p key={index}>{equipment}</p>;
+                })}
+              </div>
             </div>
-          ) : null}
+          )}
+          {newdata && !isDataList && (
+            <div className='container-description-section'>
+              <p className='position-description-section'>{data}</p>
+            </div>
+          )}
         </div>
       </section>
     </>

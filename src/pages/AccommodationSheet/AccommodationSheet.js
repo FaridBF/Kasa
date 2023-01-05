@@ -1,8 +1,7 @@
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
 import DescriptionList from '../../components/DescriptionList/DescriptionList';
-import EquipmentList from '../../components/EquipmentList/EquipmentList';
-import displayStars from '../../utils/displayStars';
+import notation from '../../components/Notation/Notation';
 
 import data from '../../data/kasa.json';
 
@@ -59,13 +58,13 @@ function AccommodationSheet() {
             />
           </div>
           <div className='profil-bottom-section'>
-            <span>{displayStars(accommodation.rating)}</span>
+            <span>{notation(accommodation.rating)}</span>
           </div>
         </div>
       </div>
       <div className='descriptionAndEquipement-section'>
-        <DescriptionList accommodation={accommodation} />
-        <EquipmentList accommodation={accommodation} />
+        <DescriptionList data={accommodation.description} title='Description' />
+        <DescriptionList data={accommodation.equipments} title='Equipements' />
       </div>
       <Footer />
     </>
