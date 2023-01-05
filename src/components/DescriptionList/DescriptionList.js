@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './descriptionList.css';
 
 function DescriptionList({ data, title }) {
-  console.log('data', data);
+  // console.log('data', data);
   const [newdata, setnewData] = useState(true);
   const [isDataList, setIsDataList] = useState(false);
 

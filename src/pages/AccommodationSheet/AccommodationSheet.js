@@ -10,13 +10,14 @@ import '../AccommodationSheet/accommodationSheet.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { useParams } from 'react-router';
+import Tag from '../../components/Tag/Tag';
 
 function AccommodationSheet() {
   let { uid } = useParams();
-  console.log('params', uid);
+  // console.log('params', uid);
 
   const accommodation = data.filter((item) => item.id === uid)[0];
-  console.log(accommodation);
+  // console.log(accommodation);
 
   return (
     <>
@@ -40,13 +41,7 @@ function AccommodationSheet() {
         <div className='description-profil-section'>
           <h1 className='title-profil-section'>{accommodation.title}</h1>
           <p className='location-profil-section'>{accommodation.location}</p>
-          {accommodation.tags.map((tag, index) => {
-            return (
-              <span className='tag-profil-section' key={index}>
-                {tag}
-              </span>
-            );
-          })}
+          <Tag data={accommodation.tags} />
         </div>
         <div className='profil-section'>
           <div className='profil-top-section'>
