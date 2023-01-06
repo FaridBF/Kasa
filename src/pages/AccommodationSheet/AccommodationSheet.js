@@ -2,15 +2,14 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Description from "../../components/Description/Description";
 import notation from "../../components/Notation/Notation";
+import Tag from "../../components/Tag/Tag";
+import Carrousel from "../../components/Carrousel/Carrousel";
 
 import data from "../../data/kasa.json";
 
 import "../AccommodationSheet/accommodationSheet.css";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import { useParams } from "react-router";
-import Tag from "../../components/Tag/Tag";
 
 function AccommodationSheet() {
   let { uid } = useParams();
@@ -22,21 +21,7 @@ function AccommodationSheet() {
   return (
     <>
       <Header />
-
-      <div id="carrousel">
-        <div id="container">
-          <FontAwesomeIcon
-            id="g"
-            className="bouton"
-            icon="fa-solid fa-chevron-left"
-          />
-          <FontAwesomeIcon
-            id="d"
-            className="bouton"
-            icon="fa-solid fa-chevron-right"
-          />
-        </div>
-      </div>
+      <Carrousel data={accommodation.pictures} />
       <div className="section-container">
         <div className="description-profil-section">
           <h1 className="title-profil-section">{accommodation.title}</h1>
