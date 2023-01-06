@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router';
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import './descriptionList.css';
+import "./description.css";
 
-function DescriptionList({ data, title }) {
+function Description({ data, title }) {
   const location = useLocation();
   const currentURLPathname = location.pathname;
 
@@ -26,20 +26,20 @@ function DescriptionList({ data, title }) {
 
   return (
     <>
-      {currentURLPathname === '/about' ? (
+      {currentURLPathname === "/about" ? (
         <>
-          <section className='container-sections'>
-            <div className='reliability-section'>
+          <section className="container-sections">
+            <div className="reliability-section">
               <div onClick={() => setReliability(!reliability)}>
-                <h1 className='title-section'>
+                <h1 className="title-section">
                   Fiabilité
-                  <span className='logo-section'>
-                    <FontAwesomeIcon icon='fa-solid fa-chevron-down' />
+                  <span className="logo-section">
+                    <FontAwesomeIcon icon="fa-solid fa-chevron-down" />
                   </span>
                 </h1>
               </div>
               {reliability ? (
-                <div className='description-section'>
+                <div className="description-section">
                   <p>
                     Les annonces postées sur Kasa garantissent une fiabilité
                     totale. Les photos sont conformes aux logements, et toutes
@@ -49,51 +49,51 @@ function DescriptionList({ data, title }) {
                 </div>
               ) : null}
             </div>
-            <div className='respect-section'>
+            <div className="respect-section">
               <div onClick={() => setRespect(!respect)}>
-                <h1 className='title-section'>
+                <h1 className="title-section">
                   Respect
-                  <span className='logo-section'>
-                    <FontAwesomeIcon icon='fa-solid fa-chevron-down' />
+                  <span className="logo-section">
+                    <FontAwesomeIcon icon="fa-solid fa-chevron-down" />
                   </span>
                 </h1>
               </div>
               {respect ? (
-                <p className='description-section'>
+                <p className="description-section">
                   La bienveillance fait partie des valeurs fondatrices de Kasa.
                   Tout comportement discriminatoire ou de perturbation du
                   voisinage entraînera une exclusion de notre plateforme.
                 </p>
               ) : null}
             </div>
-            <div className='service-section'>
+            <div className="service-section">
               <div onClick={() => setService(!service)}>
-                <h1 className='title-section'>
+                <h1 className="title-section">
                   Service
-                  <span className='logo-section'>
-                    <FontAwesomeIcon icon='fa-solid fa-chevron-down' />
+                  <span className="logo-section">
+                    <FontAwesomeIcon icon="fa-solid fa-chevron-down" />
                   </span>
                 </h1>
               </div>
               {service ? (
-                <p className='description-section'>
+                <p className="description-section">
                   Nos équipes se tiennent à votre disposition pour vous fournir
                   une expérience parfaite. N'hésitez pas à nous contacter si
                   vous avez la moindre question.
                 </p>
               ) : null}
             </div>
-            <div className='security-section'>
+            <div className="security-section">
               <div onClick={() => setSecurity(!security)}>
-                <h1 className='title-section'>
+                <h1 className="title-section">
                   Sécurité
-                  <span className='logo-section'>
-                    <FontAwesomeIcon icon='fa-solid fa-chevron-down' />
+                  <span className="logo-section">
+                    <FontAwesomeIcon icon="fa-solid fa-chevron-down" />
                   </span>
                 </h1>
               </div>
               {security ? (
-                <p className='description-section'>
+                <p className="description-section">
                   La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes
                   que pour les voyageurs, chaque logement correspond aux
                   critères de sécurité établis par nos services. En laissant une
@@ -108,19 +108,19 @@ function DescriptionList({ data, title }) {
         </>
       ) : (
         <>
-          <section className='container-description-sections'>
-            <div className='description-description-section'>
+          <section className="container-description-sections">
+            <div className="description-description-section">
               <div onClick={() => setnewData(!newdata)}>
-                <h1 className='title-description-section'>
+                <h1 className="title-description-section">
                   {title}
-                  <span className='logo-description-section'>
-                    <FontAwesomeIcon icon='fa-solid fa-chevron-down' />
+                  <span className="logo-description-section">
+                    <FontAwesomeIcon icon="fa-solid fa-chevron-down" />
                   </span>
                 </h1>
               </div>
               {newdata && isDataList && (
-                <div className='container-description-section'>
-                  <div className='position-description-section'>
+                <div className="container-description-section">
+                  <div className="position-description-section">
                     {data.map((equipment, index) => {
                       return <p key={index}>{equipment}</p>;
                     })}
@@ -128,8 +128,8 @@ function DescriptionList({ data, title }) {
                 </div>
               )}
               {newdata && !isDataList && (
-                <div className='container-description-section'>
-                  <p className='position-description-section'>{data}</p>
+                <div className="container-description-section">
+                  <p className="position-description-section">{data}</p>
                 </div>
               )}
             </div>
@@ -140,4 +140,4 @@ function DescriptionList({ data, title }) {
   );
 }
 
-export default DescriptionList;
+export default Description;
