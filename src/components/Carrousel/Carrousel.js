@@ -17,13 +17,13 @@ function Carrousel(data) {
   }, [index, pictures]);
 
   const handlePreviousClick = () => {
-    let newIndex = index - 1;
-    setIndex(newIndex);
+    let previousIndex = index - 1;
+    setIndex(previousIndex);
   };
 
   const handleNextClick = () => {
-    let newIndex2 = index + 1;
-    setIndex(newIndex2);
+    let newIndex = index + 1;
+    setIndex(newIndex);
   };
 
   return (
@@ -35,7 +35,7 @@ function Carrousel(data) {
           className="bouton"
           icon="fa-solid fa-chevron-left"
         />
-        <img src={currentImage} alt="carrousel" />
+        <img className="img-carrousel" src={currentImage} alt={currentImage} />
         <FontAwesomeIcon
           onClick={handleNextClick}
           id="d"
