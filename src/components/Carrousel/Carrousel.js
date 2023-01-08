@@ -1,29 +1,41 @@
 import React, { useEffect, useState } from "react";
 
 import "./carrousel.css";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Carrousel(data) {
   const pictures = data.data;
-  console.log(pictures, "pictures");
+  // console.log(pictures, "pictures");
   const [index, setIndex] = useState(0);
   const [currentImage, setCurrentImage] = useState(pictures[index]);
 
   console.log(currentImage, "currentImage");
+  console.log(index, "index");
 
   useEffect(() => {
     setCurrentImage(pictures[index]);
   }, [index, pictures]);
 
-  const handlePreviousClick = () => {
-    let previousIndex = index - 1;
-    setIndex(previousIndex);
+  // Créez une fonction qui permet de passer à l'image suivante dans le carrousel
+  const handleNextClick = () => {
+    // Si l'index actuel est le dernier élément du tableau, retournez à l'index 0
+    if (index === pictures.length - 1) {
+      setIndex(0);
+    } else {
+      // Sinon, passez à l'image suivante en incrémentant l'index actuel
+      setIndex(index + 1);
+    }
   };
 
-  const handleNextClick = () => {
-    let newIndex = index + 1;
-    setIndex(newIndex);
+  // Créez une fonction qui permet de passer à l'image précédente dans le carrousel
+  const handlePreviousClick = () => {
+    // Si l'index actuel est 0, passez à l'index du dernier élément du tableau
+    if (index === 0) {
+      setIndex(pictures.length - 1);
+    } else {
+      // Sinon, passez à l'image précédente en décrémentant l'index actuel
+      setIndex(index - 1);
+    }
   };
 
   return (
