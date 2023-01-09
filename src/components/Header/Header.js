@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import logoKasa from "../../assets/logo/logoKasa.png";
 
 import "./header.css";
 
 function Header() {
+  let activeStyle = {
+    textDecoration: "underline"
+  };
+
   return (
     <div className="header-container">
       <Link to="/">
@@ -13,14 +18,22 @@ function Header() {
       <nav>
         <ul className="menu-nav">
           <li>
-            <a className="link-nav" href="/">
+            <NavLink
+              className="link-nav"
+              to="/"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
               Accueil
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a className="link-nav" href="/about">
+            <NavLink
+              className="link-nav"
+              to="/about"
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
               A Propos
-            </a>
+            </NavLink>
           </li>
         </ul>
       </nav>
