@@ -1,12 +1,12 @@
 .section {
   display: flex;
-  width: 1240px;
+  width: 77.5rem;
   height: auto;
   background: #f7f7f7;
-  border-radius: 25px 25px 0px 0px;
-  margin-top: 25px;
-  padding-top: 40px;
-  padding-bottom: 10px;
+  border-radius: 1.56rem 1.56rem 0rem 0rem;
+  margin-top: 1.56rem;
+  padding-top: 2.5rem;
+  padding-bottom: 0.62rem;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }

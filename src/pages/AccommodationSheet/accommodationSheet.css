@@ -8,7 +8,7 @@
 
 img.photo-profil {
   border-radius: 100%;
-  width: 64px;
+  width: 4rem;
   background: #c4c4c4;
   height: 60%;
 }
@@ -17,7 +17,7 @@ img.photo-profil {
   display: flex;
   font-weight: 500;
   color: #ff6060;
-  font-size: 18px;
+  font-size: 1.12rem;
   justify-content: flex-end;
   flex-direction: column;
 }
@@ -34,23 +34,23 @@ img.photo-profil {
 .title-profil-section {
   color: #ff6060;
   font-weight: 500;
-  font-size: 36px;
+  font-size: 2.25rem;
 }
 
 .location-profil-section {
   font-weight: 500;
-  font-size: 18px;
-  margin-bottom: 25px;
+  font-size: 1.12rem;
+  margin-bottom: 1.56rem;
   color: #ff6060;
 }
 
 .tag-profil-section {
   background: #ff6060;
-  border-radius: 10px;
+  border-radius: 0.62rem;
   font-weight: 500;
   color: white;
-  font-size: 14px;
-  padding: 5px 25px 5px 25px;
+  font-size: 0.87rem;
+  padding: 0.31rem 1.56rem 0.31rem 1.56rem;
 }
 
 .descriptionAndEquipement-section {

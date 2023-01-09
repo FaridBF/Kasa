@@ -2,26 +2,26 @@
 .title-description-section {
   color: #ffffff;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   background: #ff6060;
-  border-radius: 5px;
-  width: 500px;
-  height: 47px;
+  border-radius: 0.31rem;
+  width: 31.25rem;
+  height: 2.93rem;
   justify-content: space-between;
-  padding: 15px;
-  margin: -5px;
+  padding: 0.93rem;
+  margin: -0.31rem;
 }
 
 .container-description-section {
-  width: 500px;
+  width: 31.25rem;
   border-radius: 0px 0px 5px 5px;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #ff6060;
   background: #f7f7f7;
-  width: 500px;
+  width: 31.25rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -33,7 +33,7 @@
 }
 
 .position-description-section {
-  padding: 15px;
+  padding: 0.93rem;
 }
 
 /*Page About*/
@@ -44,28 +44,28 @@
 }
 
 .service-section {
-  width: 585px;
+  width: 36.56rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .respect-section {
-  width: 585px;
+  width: 36.56rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .reliability-section {
-  width: 585px;
+  width: 36.56rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .security-section {
-  width: 585px;
+  width: 36.56rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,26 +74,26 @@
 .title-section {
   color: #ffffff;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   background: #ff6060;
-  border-radius: 5px;
-  width: 1023px;
-  height: 47px;
+  border-radius: 0.31rem;
+  width: 63.93rem;
+  height: 2.93rem;
   justify-content: space-between;
-  padding: 15px;
+  padding: 0.93rem;
 }
 
 .description-section {
-  width: 1023px;
-  padding: 15px 15px;
-  margin-top: -10px;
+  width: 63.93rem;
+  padding: 0.93rem 0.93rem;
+  margin-top: -0.62rem;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #ff6060;
   background: #f7f7f7;
-  border-radius: 5px;
+  border-radius: 0.31rem;
 }
 
 .logo-section {

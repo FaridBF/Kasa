@@ -15,9 +15,9 @@
 
 .bouton {
   position: absolute;
-  width: 70px;
+  width: 4.37rem;
   cursor: pointer;
-  top: 170px;
+  top: 10.62rem;
 }
 
 svg#d {
@@ -58,5 +58,5 @@ svg#g {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  border-radius: 25px;
+  border-radius: 1.56rem;
 }
