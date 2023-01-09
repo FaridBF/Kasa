@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Carrousel(data) {
   const pictures = data.data;
-  // console.log(pictures, "pictures");
+  console.log(pictures, "pictures");
   const [index, setIndex] = useState(0);
   const [currentImage, setCurrentImage] = useState(pictures[index]);
 
@@ -48,6 +48,9 @@ function Carrousel(data) {
           icon="fa-solid fa-chevron-left"
         />
         <img className="img-carrousel" src={currentImage} alt={currentImage} />
+        <div className="counter-carrousel">
+          {index + 1}/{pictures.length}
+        </div>
         <FontAwesomeIcon
           onClick={handleNextClick}
           id="d"

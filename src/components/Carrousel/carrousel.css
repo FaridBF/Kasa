@@ -60,3 +60,16 @@ svg#g {
   object-fit: cover;
   border-radius: 1.56rem;
 }
+
+.counter-carrousel {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.12rem;
+  color: #ffffff;
+}
