@@ -26,11 +26,8 @@ npm install
 npm start ( "start": "react-scripts start")
 ```
 
-Vous pouvez dès à présent travailler sur le repo.
-
 ## Les outils utilisés:
 
-- [Node.js](https://nodejs.org/en/) permet de créer des applications rapides et évolutives côté serveur et en réseau.
 - [Figma](https://www.figma.com/fr/) pour la maquette initiale fournie via l'outil par l'équipe TeamParents.
 - [Fontawesome](https://fontawesome.com/) est une bibliothèque d'icônes.
 - [React.js](https://fr.reactjs.org/) est une bibliothèque JavaScript pour créer des interfaces utilisateurs.
