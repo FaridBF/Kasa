@@ -1,10 +1,10 @@
 const Tag = (data) => {
   // console.log('dataTag', data);
   return (
-    <div>
+    <div className='tag-container'>
       {data.data.map((tag, index) => {
         return (
-          <span className="tag-profil-section" key={index}>
+          <span className='tag-profil-section' key={index}>
             {tag}
           </span>
         );

@@ -32,3 +32,21 @@
 .link-home:hover {
   color: blue;
 }
+
+/*responsive*/
+@media screen and (min-width: 0px) and (max-width: 640px) {
+  .title-error404 {
+    font-size: 12rem;
+  }
+  .description-error404 {
+    font-size: 1.3rem;
+    width: 60%;
+    text-align: center;
+  }
+  .container-error404 {
+    margin-top: 10rem;
+  }
+  .link-home {
+    font-size: 1.3rem;
+  }
+}

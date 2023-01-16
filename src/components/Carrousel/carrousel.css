@@ -73,3 +73,47 @@ svg#g {
   font-size: 1.12rem;
   color: #ffffff;
 }
+
+@media screen and (min-width: 0px) and (max-width: 640px) {
+  div#carrousel {
+    width: 21rem;
+    height: 21rem;
+  }
+  .section-container {
+    width: 21rem;
+    display: flex;
+    flex-direction: column;
+  }
+  h1.title-profil-section {
+    font-size: 2rem;
+  }
+  h1.title-description-section {
+    width: 21rem;
+  }
+  .container-description-section {
+    width: 21rem;
+  }
+  svg#d {
+    height: 50px;
+  }
+  svg#g {
+    height: 50px;
+  }
+  span.tag-profil-section {
+    font-size: 0.6rem;
+  }
+  .profil-section {
+    display: flex;
+    flex-direction: row-reverse !important;
+    font-size: 0.9rem;
+    align-items: center;
+  }
+  .profil-bottom-section {
+    font-size: 0.7rem;
+  }
+  .tag-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

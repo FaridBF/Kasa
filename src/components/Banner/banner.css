@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   mix-blend-mode: darken;
-  background-image: url("../../assets/images/background.png");
+  background-image: url('../../assets/images/background.png');
 }
 
 .banner-img {
@@ -18,6 +18,24 @@
   font-weight: 500;
   font-size: 3rem;
   color: #ffffff;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
+}
+
+@media screen and (min-width: 0px) and (max-width: 640px) {
+  .title-banner {
+    font-size: 1rem;
+  }
+  .banner-container {
+    height: 8rem !important;
+    border-radius: 1.56rem;
+  }
+  img.banner-img {
+    width: 100%;
+    height: 100%;
+  }
+  .banner-container {
+    width: 21rem;
+    height: auto;
+  }
 }

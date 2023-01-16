@@ -99,3 +99,35 @@
 .logo-section {
   cursor: pointer;
 }
+
+/*responsive*/
+@media screen and (min-width: 0px) and (max-width: 640px) {
+  .container-sections {
+    width: 21.25rem;
+  }
+  .title-section {
+    width: 19.93rem;
+    height: 2.93rem;
+  }
+
+  .description-section {
+    width: 19.93rem;
+  }
+
+  .descriptionAndEquipement-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .security-section {
+    width: 21rem;
+  }
+  .service-section {
+    width: 21rem;
+  }
+  .respect-section {
+    width: 21rem;
+  }
+  .reliability-section {
+    width: 21rem;
+  }
+}

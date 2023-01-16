@@ -24,3 +24,17 @@
   font-weight: 500;
   font-size: 1.5rem;
 }
+
+/*responsive*/
+@media screen and (min-width: 0px) and (max-width: 640px) {
+  .header-container {
+    margin-top: 1rem;
+    width: 21rem;
+  }
+  .logo-header {
+    width: 9.12rem;
+  }
+  .link-nav {
+    font-size: 1.1rem;
+  }
+}

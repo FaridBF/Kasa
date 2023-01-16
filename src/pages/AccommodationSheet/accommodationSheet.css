@@ -58,3 +58,22 @@ img.photo-profil {
   align-items: flex-start;
   justify-content: space-between;
 }
+
+@media screen and (min-width: 0px) and (max-width: 640px) {
+  .accomodations-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.56rem;
+    width: 22rem !important;
+    align-content: center;
+  }
+  section.accomodations-section {
+    background-color: white;
+    width: 22rem;
+    margin: 0;
+    padding: 0;
+  }
+  section.container-sections {
+    overflow-y: scroll;
+  }
+}
