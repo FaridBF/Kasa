@@ -33,4 +33,3 @@ npm start ( "start": "react-scripts start")
 - [React.js](https://fr.reactjs.org/) est une bibliothèque JavaScript pour créer des interfaces utilisateurs.
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom) est un package permettant de réaliser des liaisons pour l'utilisation de React Router dans les applications Web.
 - [Les Hooks](https://fr.reactjs.org/docs/hooks-state.html) permettent de bénéficier d’un état local et d’autres fonctionnalités de React sans avoir à écrire de classes (disponible depuis React 16.8).
-- [axios](https://axios-http.com/fr/docs/intro) est un client HTTP basé sur les promesses compatible avec node.js et les navigateurs. Cela me permet de faire des requêtes http.
