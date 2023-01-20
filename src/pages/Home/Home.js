@@ -5,8 +5,10 @@ import Footer from '../../components/Footer/Footer';
 
 import '../Home/home.css';
 
-// import data from "../../data/kasa.json";
-
+/**
+ * Fonction permettant la création de la page d'accueil
+ * La page d'accueil est la premire page de notre site apparente côté utilisateur.
+ */
 function Home() {
   return (
     <>

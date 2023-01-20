@@ -5,6 +5,10 @@ import bannerAbout from '../../assets/images/banner-about.png';
 
 import './banner.css';
 
+/**
+ * Fonction permettant d'alterner la bannière selon la page
+ * Possible via le hook useLocation() reprenant le chemin courant
+ */
 function Banner() {
   const location = useLocation();
   const currentURLPathname = location.pathname;

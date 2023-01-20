@@ -1,18 +1,22 @@
-import Header from "../../components/Header/Header";
+import Header from '../../components/Header/Header';
 
-import "./page404.css";
+import './page404.css';
 
+/**
+ * Fonction permettant la création de la page 404
+ * Utlisation lorsque l'ID est incorrect ainsi que l'url tapé
+ */
 function Page404() {
   return (
     <>
       <Header />
-      <div className="container-error404">
-        <h1 className="title-error404">404</h1>
-        <h2 className="description-error404">
+      <div className='container-error404'>
+        <h1 className='title-error404'>404</h1>
+        <h2 className='description-error404'>
           Oups! La page que vous demandez n'existe pas.
         </h2>
 
-        <a className="link-home" href="/">
+        <a className='link-home' href='/'>
           <p>Retourner sur la page d'accueil</p>
         </a>
       </div>

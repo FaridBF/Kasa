@@ -1,16 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
-import "./carrousel.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import './carrousel.css';
 
+/**
+ * Fonction permettant la gestion du carrousel avec deux fonctions afin de pouvoir naviguer de droite à gauche et de gauche à droite
+ * Possible via deux hooks useEffect() et useState()
+ */
 function Carrousel(data) {
   const pictures = data.data;
-  console.log(pictures, "pictures");
+  console.log(pictures, 'pictures');
   const [index, setIndex] = useState(0);
   const [currentImage, setCurrentImage] = useState(pictures[index]);
 
-  console.log(currentImage, "currentImage");
-  console.log(index, "index");
+  console.log(currentImage, 'currentImage');
+  console.log(index, 'index');
 
   useEffect(() => {
     setCurrentImage(pictures[index]);
@@ -39,23 +43,23 @@ function Carrousel(data) {
   };
 
   return (
-    <div id="carrousel">
-      <div id="container">
+    <div id='carrousel'>
+      <div id='container'>
         <FontAwesomeIcon
           onClick={handlePreviousClick}
-          id="g"
-          className="bouton"
-          icon="fa-solid fa-chevron-left"
+          id='g'
+          className='bouton'
+          icon='fa-solid fa-chevron-left'
         />
-        <img className="img-carrousel" src={currentImage} alt={currentImage} />
-        <div className="counter-carrousel">
+        <img className='img-carrousel' src={currentImage} alt={currentImage} />
+        <div className='counter-carrousel'>
           {index + 1}/{pictures.length}
         </div>
         <FontAwesomeIcon
           onClick={handleNextClick}
-          id="d"
-          className="bouton"
-          icon="fa-solid fa-chevron-right"
+          id='d'
+          className='bouton'
+          icon='fa-solid fa-chevron-right'
         />
       </div>
     </div>

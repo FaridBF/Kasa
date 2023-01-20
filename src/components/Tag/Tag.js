@@ -1,5 +1,8 @@
+/**
+ * Composant permettant l'affichage du tag (descriptif de l'annonce via des mots clés)
+ * Présent pour le moment dans la page accomodationSheet
+ */
 const Tag = (data) => {
-  // console.log('dataTag', data);
   return (
     <div className='tag-container'>
       {data.data.map((tag, index) => {
