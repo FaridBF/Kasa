@@ -12,7 +12,7 @@ import data from '../../data/kasa.json';
 import '../AccommodationSheet/accommodationSheet.css';
 
 /**
- * Fonction concernant la création de notre fiche de logement
+ * Page affichant une fiche de logement
  * Hook useParams renvoie un objet de paires clé/valeur des paramètres dynamiques de l'URL actuelle.
  */
 function AccommodationSheet() {

@@ -5,7 +5,6 @@ import Description from '../../components/Description/Description';
 
 /**
  * Page A propos
- *
  */
 function About() {
   return (

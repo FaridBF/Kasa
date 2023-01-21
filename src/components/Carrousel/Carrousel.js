@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './carrousel.css';
 
 /**
- * Fonction permettant la gestion du carrousel avec deux fonctions afin de pouvoir naviguer de droite à gauche et de gauche à droite
+ * Composant permettant la gestion du carrousel avec deux fonctions afin de pouvoir naviguer de droite à gauche et de gauche à droite
  * Possible via deux hooks useEffect() et useState()
  */
 function Carrousel(data) {
@@ -20,7 +20,7 @@ function Carrousel(data) {
     setCurrentImage(pictures[index]);
   }, [index, pictures]);
 
-  // Créez une fonction qui permet de passer à l'image suivante dans le carrousel
+  // Permet de passer à l'image suivante dans le carrousel
   const handleNextClick = () => {
     // Si l'index actuel est le dernier élément du tableau, retournez à l'index 0
     if (index === pictures.length - 1) {
@@ -31,7 +31,7 @@ function Carrousel(data) {
     }
   };
 
-  // Créez une fonction qui permet de passer à l'image précédente dans le carrousel
+  // Permet de passer à l'image précédente dans le carrousel
   const handlePreviousClick = () => {
     // Si l'index actuel est 0, passez à l'index du dernier élément du tableau
     if (index === 0) {

@@ -6,8 +6,7 @@ import logoFooter from '../../assets/logo/logoFooter.png';
 import './footer.css';
 
 /**
- * Fonction permettant la réutilisation du composant footer dans les pages souhaitées
- *
+ * Composant footer
  */
 function Footer() {
   return (

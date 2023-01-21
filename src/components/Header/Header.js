@@ -6,7 +6,7 @@ import logoKasa from '../../assets/logo/logoKasa.png';
 import './header.css';
 
 /**
- * Fonction permettant la création de notre composant Header présent sur l'ensemble des pages du site
+ * Composant permettant la création de notre composant Header présent sur l'ensemble des pages du site
  * Menu de navigation permettant une redirection vers la page souhaitée via Link pour le logo et NavLink pour le menu (react-router-dom)
  */
 function Header() {

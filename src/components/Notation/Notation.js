@@ -3,7 +3,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 /**
- * Fonction permettant de récupérer la notation exacte selon la fiche du logement affiché
+ * Composant permettant de récupérer la notation exacte selon la fiche du logement affiché
  * Réalisation via une boucle
  */
 const notation = (num) => {

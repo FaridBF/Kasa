@@ -6,8 +6,8 @@ import Footer from '../../components/Footer/Footer';
 import '../Home/home.css';
 
 /**
- * Fonction permettant la création de la page d'accueil
- * La page d'accueil est la premire page de notre site apparente côté utilisateur.
+ * Page d'accueil
+ * La page d'accueil est la première page de notre site apparente côté utilisateur.
  */
 function Home() {
   return (

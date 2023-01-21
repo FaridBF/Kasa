@@ -6,8 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './description.css';
 
 /**
- * Fonction permettant la gestion de la page A propos et de la partie descriptif/équipement de la page accomadationSheet
- * Utilisateur des states sous d'un booléen pour l'affichage des différents descriptifs demandés
+ * Composant permettant la gestion de la page A propos et de la partie descriptif/équipement de la page accomadationSheet
+ * Utilisation des states sous d'un booléen pour l'affichage des différents descriptifs demandés
  */
 function Description({ data, title }) {
   const location = useLocation();

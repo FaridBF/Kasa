@@ -4,7 +4,7 @@ import data from '../../data/kasa.json';
 import { useNavigate } from 'react-router-dom';
 
 /**
- * Fonction permettant une redirection vers l'appartement via l'ID
+ * Composant permettant une redirection vers l'appartement via l'ID
  * Possible via le hook useNavigate()
  */
 function Card() {

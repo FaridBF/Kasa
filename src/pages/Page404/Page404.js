@@ -3,9 +3,8 @@ import Header from '../../components/Header/Header';
 import './page404.css';
 
 /**
- *La page 404 est renvoyée pour chaque route inexistante, ou si une
- *valeur présente dans l’URL ne fait pas partie des données
- *renseignées
+ * La page 404 est renvoyée pour chaque route inexistante, ou si une
+ * valeur présente dans l’URL ne fait pas partie des données renseignées
  */
 function Page404() {
   return (
