@@ -3,13 +3,13 @@ import { useLocation } from 'react-router';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import './description.css';
+import './collapse.css';
 
 /**
  * Composant permettant la gestion de la page A propos et de la partie descriptif/équipement de la page accomadationSheet
  * Utilisation des states sous d'un booléen pour l'affichage des différents descriptifs demandés
  */
-function Description({ data, title }) {
+function Collapse({ data, title }) {
   const location = useLocation();
   const currentURLPathname = location.pathname;
 
@@ -144,4 +144,4 @@ function Description({ data, title }) {
   );
 }
 
-export default Description;
+export default Collapse;

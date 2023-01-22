@@ -2,7 +2,7 @@ import { Navigate, useParams } from 'react-router';
 
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
-import Description from '../../components/Description/Description';
+import Collapse from '../../components/Collapse/Collapse';
 import notation from '../../components/Notation/Notation';
 import Tag from '../../components/Tag/Tag';
 import Carrousel from '../../components/Carrousel/Carrousel';
@@ -48,8 +48,8 @@ function AccommodationSheet() {
             </div>
           </div>
           <div className='descriptionAndEquipement-section'>
-            <Description data={accommodation.description} title='Description' />
-            <Description data={accommodation.equipments} title='Equipements' />
+            <Collapse data={accommodation.description} title='Description' />
+            <Collapse data={accommodation.equipments} title='Equipements' />
           </div>
           <Footer />
         </>
