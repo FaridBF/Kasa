@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -9,10 +8,7 @@ import './collapse.css';
  * Composant permettant la gestion de la page A propos et de la partie descriptif/équipement de la page accomadationSheet
  * Utilisation des states sous d'un booléen pour l'affichage des différents descriptifs demandés
  */
-function Collapse({ data, title }) {
-  const location = useLocation();
-  const currentURLPathname = location.pathname;
-
+function Collapse({ data, title, isPageAbout }) {
   const [newdata, setnewData] = useState(true);
   const [isDataList, setIsDataList] = useState(false);
   const [reliability, setReliability] = useState(true);
@@ -30,7 +26,7 @@ function Collapse({ data, title }) {
 
   return (
     <>
-      {currentURLPathname === '/about' ? (
+      {isPageAbout ? (
         <>
           <section className='container-sections'>
             <div className='reliability-section'>

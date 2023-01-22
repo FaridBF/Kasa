@@ -8,14 +8,19 @@ import imageBannerAbout from '../../assets/images/banner-about.png';
  * Page A propos
  */
 function About() {
+  const isPageAbout = true;
   return (
     <>
       <Header />
       <Banner image={imageBannerAbout} />
-      <Collapse />
+      <Collapse isPageAbout={isPageAbout} />
       <Footer />
     </>
   );
 }
 
 export default About;
+
+/**
+ *
+ */
