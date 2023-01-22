@@ -3,6 +3,7 @@ import Banner from '../../components/Banner/Banner';
 import Footer from '../../components/Footer/Footer';
 import Collapse from '../../components/Collapse/Collapse';
 
+import imageBannerAbout from '../../assets/images/banner-about.png';
 /**
  * Page A propos
  */
@@ -10,7 +11,7 @@ function About() {
   return (
     <>
       <Header />
-      <Banner />
+      <Banner image={imageBannerAbout} />
       <Collapse />
       <Footer />
     </>
