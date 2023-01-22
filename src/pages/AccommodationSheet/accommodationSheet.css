@@ -5,6 +5,11 @@
   justify-content: space-between;
   align-items: flex-start;
 }
+.container-description-sections {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 
 img.photo-profil {
   border-radius: 100%;
@@ -64,16 +69,34 @@ img.photo-profil {
     display: flex;
     flex-direction: column;
     margin-top: 1.56rem;
-    width: 22rem !important;
+    width: 21rem !important;
     align-content: center;
   }
   section.accomodations-section {
     background-color: white;
-    width: 22rem;
+    width: 21rem;
     margin: 0;
     padding: 0;
   }
   section.container-sections {
     overflow-y: scroll;
+  }
+  .half-section {
+    width: 21rem;
+  }
+
+  .half-content {
+    width: 21rem;
+  }
+
+  .half-content-details {
+    width: 21rem;
+  }
+
+  .container-description-sections {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
   }
 }

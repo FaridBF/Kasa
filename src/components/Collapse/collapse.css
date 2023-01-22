@@ -1,5 +1,4 @@
-/*Page AccommodationSheet*/
-.title-description-section {
+.half-section {
   color: #ffffff;
   font-weight: 500;
   font-size: 1.5rem;
@@ -13,65 +12,38 @@
   padding: 0.93rem;
   margin: -0.31rem;
 }
-
-.container-description-section {
+.half-content {
   width: 31.25rem;
   border-radius: 0px 0px 5px 5px;
   font-weight: 400;
   font-size: 1.5rem;
   color: #ff6060;
   background: #f7f7f7;
-  width: 31.25rem;
+  /* width: 31.25rem; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 0px;
 }
-
-.logo-description-section {
+.half-logo-section {
   cursor: pointer;
 }
-
-.position-description-section {
+.half-content-details {
   padding: 0.93rem;
 }
-
 /*Page About*/
 .container-sections {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-
-.service-section {
+.collapse-content-section {
   width: 36.56rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.respect-section {
-  width: 36.56rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.reliability-section {
-  width: 36.56rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.security-section {
-  width: 36.56rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.title-section {
+.full-section {
   color: #ffffff;
   font-weight: 500;
   font-size: 1.5rem;
@@ -84,8 +56,8 @@
   justify-content: space-between;
   padding: 0.93rem;
 }
-
-.description-section {
+.description-section,
+.full-content {
   width: 63.93rem;
   padding: 0.93rem 0.93rem;
   margin-top: -0.62rem;
@@ -95,39 +67,27 @@
   background: #f7f7f7;
   border-radius: 0.31rem;
 }
-
-.logo-section {
+.logo-section,
+.full-logo-section {
   cursor: pointer;
 }
-
 /*responsive*/
 @media screen and (min-width: 0px) and (max-width: 640px) {
   .container-sections {
     width: 21.25rem;
   }
-  .title-section {
+  .full-section {
     width: 19.93rem;
     height: 2.93rem;
   }
-
-  .description-section {
+  .full-content {
     width: 19.93rem;
   }
-
   .descriptionAndEquipement-section {
     display: flex;
     flex-direction: column;
   }
-  .security-section {
-    width: 21rem;
-  }
-  .service-section {
-    width: 21rem;
-  }
-  .respect-section {
-    width: 21rem;
-  }
-  .reliability-section {
+  .collapse-content-section {
     width: 21rem;
   }
 }
