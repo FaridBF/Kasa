@@ -4,7 +4,7 @@ import './card.css';
  * Composant permettant une redirection vers l'appartement via l'ID
  * Possible via le hook useNavigate()
  */
-function Card({ element }) {
+function Card({ accomodation }) {
   let navigate = useNavigate();
 
   const redirectionViaId = (userId) => {
@@ -13,10 +13,14 @@ function Card({ element }) {
 
   return (
     <>
-      <div onClick={() => redirectionViaId(element.id)} className='card'>
-        <img className='cover-card' src={element.cover} alt={element.cover} />
+      <div onClick={() => redirectionViaId(accomodation.id)} className='card'>
+        <img
+          className='cover-card'
+          src={accomodation.cover}
+          alt={accomodation.cover}
+        />
         <div className='title-container-card'>
-          <h1 className='title-card'>{element.title}</h1>
+          <h1 className='title-card'>{accomodation.title}</h1>
         </div>
       </div>
     </>
