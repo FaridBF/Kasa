@@ -34,8 +34,10 @@
 /*Page About*/
 .container-sections {
   display: flex;
+  min-height: 24rem;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
 }
 .collapse-content-section {
   width: 36.56rem;
