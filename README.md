@@ -28,7 +28,7 @@ npm start ( "start": "react-scripts start")
 
 ## Les outils utilisés:
 
-- [Figma](https://www.figma.com/fr/) pour la maquette initiale fournie via l'outil par l'équipe TeamParents.
+- [Figma](https://www.figma.com/fr/) pour la maquette initiale fournie.
 - [Fontawesome](https://fontawesome.com/) est une bibliothèque d'icônes.
 - [React.js](https://fr.reactjs.org/) est une bibliothèque JavaScript pour créer des interfaces utilisateurs.
 - [react-router-dom](https://www.npmjs.com/package/react-router-dom) est un package permettant de réaliser des liaisons pour l'utilisation de React Router dans les applications Web.
